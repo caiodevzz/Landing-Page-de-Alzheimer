@@ -1,43 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page de Alzheimer</title>
+    <meta name="description" content="Informações, acolhimento e apoio para familiares e cuidadores de pessoas com Alzheimer.">
+    <!-- Open Graph tags for social previews -->
+    <meta property="og:title" content="Juntos no cuidado com o Alzheimer">
+    <meta property="og:description" content="Informações, acolhimento e apoio para familiares e cuidadores de pessoas com Alzheimer.">
+    <meta property="og:image" content="fotos/idosos-enfrentando-a-doenca-de-alzheimer_23-2149043746.avif">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com">
+    <title>Juntos no cuidado com o Alzheimer</title>
+    <!-- google font & favicon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="icons/favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Junstos no cuidado com o ALzheimer</h1>
-    <h2>Informações, acolhimento e orientação para familiares e cuidadores. Voce nao sabe esta sozinho nossa jornada.</h2>
+    <!-- main navigation -->
+    <nav class="main-nav">
+        <a class="logo" href="#">Alzheimer</a>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="https://abraz.org.br/" target="_blank" rel="noreferrer">Apoio</a></li>
+            <li><a href="https://bvsms.saude.gov.br/doenca-de-alzheimer-3/" target="_blank" rel="noreferrer">Saiba mais</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Juntos no cuidado com o Alzheimer</h1>
+            <p>Informações, acolhimento e orientação para familiares e cuidadores. Você não está sozinho nesta jornada.</p>
+            <div class="buttons">
+                <a class="btn" href="https://abraz.org.br/" target="_blank" rel="noreferrer">Buscar apoio</a>
+                <a class="btn outline" href="https://bvsms.saude.gov.br/doenca-de-alzheimer-3/" target="_blank" rel="noreferrer">Saiba mais</a>
+            </div>
+        </div>
+    </header>
 
-    <button><a href="apoio.html"></a>Buscar apoio</button>
-    <button><a href="https://bvsms.saude.gov.br/doenca-de-alzheimer-3/"></a>Saiba mais</button>
+    <main>
+        <section class="info">
+            <figure>
+                <img src="fotos/idosos-enfrentando-a-doenca-de-alzheimer_23-2149043746.avif" alt="Casal idoso apoiando-se">
+                <figcaption>Idosos unidos, símbolo de acolhimento</figcaption>
+            </figure>
+            <figure>
+                <img src="fotos/20221910_cerebro_matematica.jpg" alt="Representação de cérebro humano">
+                <figcaption>Cérebro em destaque para estudos</figcaption>
+            </figure>
+            <figure>
+                <img src="fotos/brain_tour.jpg" alt="Exploração do cérebro">
+                <figcaption>Tour pelo interior do cérebro</figcaption>
+            </figure>
+            <figure>
+                <img src="fotos/sobrevivencia-de-acidente-vascular-cerebral-de-65-anos-uma-imagem-emocional-da-doenca-de-alzheimer-demencia-saude-mental-memoria-humana_938059-1007.avif" alt="Coração e cérebro simbólicos">
+                <figcaption>Superando desafios da saúde mental</figcaption>
+            </figure>
+        </section>
 
-    <img src="fotos/idosos-enfrentando-a-doenca-de-alzheimer_23-2149043746.avif" alt="">
-    <img src="fotos/20221910_cerebro_matematica.jpg" alt="">
+        <section id="about" class="about">
+            <h2>Entendendo a doença</h2>
+            <article class="card">
+                <h3>O que é Alzheimer</h3>
+                <p>O Alzheimer é uma doença neurodegenerativa progressiva que afeta principalmente a memória, o pensamento e o comportamento. É a forma mais comum de demência, representando cerca de 60‑70 % dos casos.</p>
+                <p>A doença se desenvolve gradualmente e pode afetar significativamente a qualidade de vida da pessoa e de seus familiares. Com o diagnóstico precoce e cuidados adequados, é possível melhorar o bem‑estar do paciente.</p>
+            </article>
 
-   <h3>Entendendo a doença</h3>
+            <article class="card">
+                <h3>Principais sintomas</h3>
+                <p>Reconhecer os sinais precocemente pode fazer diferença no tratamento e qualidade de vida.</p>
+            </article>
 
-    <div class="div1">
-<h1>O que e Alzheimer</h1>
-<p>O Alzheimer é uma doença neurodegenerativa progressiva que afeta principalmente a memória, o pensamento e o comportamento. É a forma mais comum de demência, representando cerca de 60-70% dos casos.</p>
-<p>A doença se desenvolve gradualmente e pode afetar significativamente a qualidade de vida da pessoa e de seus familiares. Com o diagnóstico precoce e cuidados adequados, é possível melhorar o bem-estar do paciente.</p>
-    </div>
+            <div class="symptoms">
+                <div class="symptom">
+                    <img src="icons/icons8-relógio-verificado-50.png" alt="Ícone de relógio">
+                    <h4>Perda de memória</h4>
+                    <p>Esquecimento de eventos recentes, datas importantes e repetição constante das mesmas perguntas.</p>
+                </div>
+                <div class="symptom">
+                    <img src="icons/icons8-falando-50.png" alt="Ícone de comunicação">
+                    <h4>Dificuldade de comunicação</h4>
+                    <p>Problemas para encontrar palavras certas, acompanhar conversas ou expressar pensamentos.</p>
+                </div>
+                <div class="symptom">
+                    <img src="icons/desorientacao.png" alt="Ícone de desorientação">
+                    <h4>Desorientação</h4>
+                    <p>Confusão sobre tempo, lugares e dificuldade para se localizar, mesmo em ambientes familiares.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <div class="div2">
-            <h1>Principais sintomas</h1>
-            <p>Reconhecer os sinais precocemente pode fazer diferença no tratamento e qualidade de vida</p>
-    </div>
+    <section id="contact" class="contact">
+        <h2>Entre em contato</h2>
+        <form>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
 
-    <div id="relogio">
-        <img src="icons/icons8-relógio-verificado-50.png" alt="">
-        <h1>Perda de memoria</h1>
-        <h2>Esquecimento de eventos recentes, datas importantes e repetição constante das mesmas perguntas.</h2>
-    </div>
-
-    <div id="falando">
-        <img src="icons/icons8-falando-50.png" alt="">
-        <h1>Dificuldade de comunicação</h1>
-        <h2>Problemas para encontrar palavras certas, acompanhar conversas ou expressar pensamentos</h2>
-    </div>
+    <footer>
+        <p>© 2026 – Projeto de conscientização sobre Alzheimer. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
